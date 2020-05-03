@@ -1,6 +1,7 @@
 import {Entity, Column, PrimaryColumn} from "typeorm";
 
 @Entity({schema:"example", database:"ingreso_vehiculos", name:"Suppliers"})
+
 export class Supplier{
     @PrimaryColumn()
     SupplierID: number;
