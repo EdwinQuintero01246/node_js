@@ -11,7 +11,7 @@
         "encrypt":true,
         "enableArithAbort":true
     },
-    "entities":["src/entify/**/*.ts"],
+    "entities":["src/entity/**/*.ts"],
     "migrations":["src/migration/**/*.ts"],
     "subcribers":["src/suscriber/**/*.ts"]
 }

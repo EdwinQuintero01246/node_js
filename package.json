@@ -27,5 +27,13 @@
     "ts-node": "^8.10.1",
     "typescript": "^3.8.3"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdwinQuintero01246/node_js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EdwinQuintero01246/node_js/issues"
+  },
+  "homepage": "https://github.com/EdwinQuintero01246/node_js#readme",
   "description": ""
 }
