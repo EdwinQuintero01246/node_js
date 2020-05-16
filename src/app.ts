@@ -7,18 +7,15 @@ import {resolve} from "path";
 
 config({"path": resolve(__dirname,"../.env")});
 import {createConnection} from "typeorm";
-import {MainController} from "./controller/main.controller";
-import {SupplierController} from "./controller/supplier.controller";
+import {FactSummary} from "./controller/fact_summary.controller";
 class App{
     public app: Application;
-    public main_controller : MainController;
-    public supplier_controller : SupplierController;
+    public Fact_Summary : FactSummary;
     constructor(){
         this.app = express();
         this.setConfig();
         this.setBDConnection();
-        this.main_controller = new MainController(this.app);
-        this.supplier_controller = new SupplierController(this.app);
+        this.Fact_Summary = new FactSummary(this.app);
     }
     private setConfig(){
         this.app.use(bodyParser.json({limit:"50mb"}));

@@ -1,25 +1,27 @@
 import {Entity, Column, PrimaryColumn} from "typeorm";
-@Entity({schema:"example", database:"ingreso_vehiculos", name:"Suppliers"})
+@Entity({schema:"example", database:"ingreso_vehiculos", name:"fact_summary"})
 
 export class Supplier{
-    @PrimaryColumn() SupplierID: number;
+    @Column() CustomerID: number;
+    @Column() CustomerName: string;
+    @Column() SupplierID: number;
     @Column() SupplierName: string;
-    @Column() Address: string;
-    @Column() City:string;
-    @Column() PostalCode:string;
-    @Column() Country:string;
-    @Column() Phone:string;
-    @Column() ContactName:string;
+    @Column() Mes: number;
+    @Column() year: number;
+    @Column() Total: number;
+    @Column() SuperoPromedio: number;
+    @Column() PorcentajeVentaMensual: number;
 }
 export interface ISupplier{
+    CustomerID: number;
+    CustomerName: string;
     SupplierID: number;
     SupplierName: string;
-    Address: string;
-    City:string;
-    PostalCode:string;
-    Country:string;
-    Phone:string;
-    ContactName:string;
+    Mes: number;
+    year: number;
+    Total: number;
+    SuperoPromedio: number;
+    PorcentajeVentaMensual: number;
 }
 export interface IResult{
     Successed: boolean;
